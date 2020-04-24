@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+:root,
+body {
+  height: 100%;
+}
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+  height: 100%;
+  border: 1px solid #000;
+}
+.wrapper > p {
+  text-align: center;
+  height: 40px;
+  background-color: grey;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 40px;
+}
+.content {
+  width: 100%;
+  height: calc(100% - 90px);
+  background-color: #eee;
+  overflow-y: scroll;
+}
+.content > div {
+  width: 100%;
+  min-height: 30px;
+  margin: 5px 0;
+  line-height: 30px;
+  overflow: hidden;
+}
+.content img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.self img,
+.self p {
+  float: right;
+}
+.system img,
+.system p {
+  float: left;
+}
+.content img {
+  margin: 0 4px;
+}
+.content p {
+  max-width: 40%;
+  border-radius: 3px;
+  padding: 0 8px;
+  line-height: 30px;
+}
+.system p {
+  background-color: #fff;
+}
+.self p {
+  background-color: greenyellow;
+}
+.bottomtool {
+  box-sizing: border-box;
+  height: 50px;
+  background-color: #ddd;
+  padding: 10px 15px;
+}
+.bottomtool button {
+  outline: none;
+  background-color: greenyellow;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.bottomtool input {
+  width: calc(100% - 90px);
+  transform: translateY(-3px);
+  border: none;
+  outline: none;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 5px;
+}
